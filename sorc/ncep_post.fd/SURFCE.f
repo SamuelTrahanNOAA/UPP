@@ -4090,7 +4090,8 @@
                if (ifhr==0) then
                  fld_info(cfld)%tinvstat=0
                else
-                 fld_info(cfld)%tinvstat=1
+                 !fld_info(cfld)%tinvstat=1
+                 fld_info(cfld)%tinvstat=IFINCR
                endif
                fld_info(cfld)%ntrange=1
              end if
